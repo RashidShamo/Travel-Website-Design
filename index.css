@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.container{
+    background-image: url(img/beach.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 35px 0;
+    transition: 0.5s;
+    
+}
+
+.title{
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background-color: cyan;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    color: white;
+    padding-top: 30px;
+}
+
+.explore{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.amazing{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 23px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.info{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: snow;
+    font-size: small;
+}
+
+
+.searchBox{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.searchBar{
+    width: 35%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.search{
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: teal;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.firstline{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+}
+
+.secondline{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-top: 3px;
+}
+
+.thirdline{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-top: 3px;
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navlinks{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 40vh;
+        width: 25vw;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        background-color: rgb(2, 81, 172);
+      
+
+    }
+
+    .searchBox{
+        width: 80%;
+    }
+
+    .searchBar{
+        width: 60%;
+    }
+}
+
+@media screen and (max-height:550px){
+    .nav{
+        padding: 13px 0;
+    }
+}
+
+.navActive{
+    display: flex;
+   
+}
+
